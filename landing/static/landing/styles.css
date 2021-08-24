@@ -1,0 +1,23 @@
+.to-content {
+    text-decoration: none;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+.introduction {
+    background: url("/static/landing/images/introduction.jpg");background-repeat: no-repeat;
+    background-repeat: center;
+    background-size: cover;
+    border-radius: 25px;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(214, 226, 148);
+}
+
+.to-content-text {
+    color: white;
+    background-color:rgb(20, 38, 202) ;
+}
