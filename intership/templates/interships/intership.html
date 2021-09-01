@@ -7,6 +7,13 @@
     <title>Document</title>
 </head>
 <body>
-    intership
+    <h3>intership</h3>
+
+    {% for post in posts %}
+        {{post.title}}
+        {{post.company}}
+    {% empty %}
+        <h3>No listing</h3>
+    {% endfor %}
 </body>
 </html>

@@ -4,5 +4,5 @@ from django.http import HttpResponse
 # Create your views here.
 
 def interships(request):
-    return render(request, 'intership.html')
+    return render(request, 'intership/intership.html')
 
