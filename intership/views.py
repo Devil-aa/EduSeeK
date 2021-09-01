@@ -7,6 +7,6 @@ from .models import User, Post
 def interships(request):
     posts = Post.objects.order_by('-id')[:10]
 
-    return render(request, 'intership.html', {'posts': posts
+    return render(request, "intership/intership.html", {'posts': posts
     })
 
