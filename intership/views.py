@@ -6,7 +6,7 @@ from .models import User, Post
 
 def interships(request):
     posts = Post.objects.all()
-    return render(request, 'interships/intership.html', {
+    return render(request, 'intership/intership.html', {
         "posts" : posts,
     })
 

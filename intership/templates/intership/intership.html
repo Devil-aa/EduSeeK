@@ -1,0 +1,16 @@
+{% extends "intership/layout.html" %}
+
+{% block body %}
+{% load static %}
+
+    <h3>intership</h3>
+
+    {% for post in posts %}
+        {{post.title}}<br>
+        {{post.company}}<br>
+        <hr>
+    {% empty %}
+        <h3>No listing</h3>
+
+    {% endfor %}
+{% endblock %}
