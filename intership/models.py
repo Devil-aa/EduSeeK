@@ -12,8 +12,15 @@ class Post(models.Model):
     duration = models.CharField(max_length=255)
     stipend= models.CharField(max_length=255)
     skills = models.CharField(max_length=255)
-    last_date=models.CharField(max_length=255)
+    last_date = models.CharField(max_length=255)
     location = models.CharField(max_length=255)
     
     def __str__(self):
-        return self.title + ' | ' +str(self.author)
+        return self.title + ' | ' + self.company
+
+class Location(models.Model):
+    city = models.CharField(max_length=255)
+    code = models.CharField(max_length=5)
+
+    def __str__(self):
+        return self.city + ' | ' + self.code
