@@ -10,8 +10,9 @@
     <h3>intership</h3>
 
     {% for post in posts %}
-        {{post.title}}
-        {{post.company}}
+        {{post.title}}<br>
+        {{post.company}}<br>
+        <hr>
     {% empty %}
         <h3>No listing</h3>
     {% endfor %}
