@@ -1,12 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+{% extends "intership/layout.html" %}
+
+{% block body %}
+{% load static %}
+
     <h3>intership</h3>
 
     {% for post in posts %}
@@ -16,5 +12,5 @@
     {% empty %}
         <h3>No listing</h3>
     {% endfor %}
-</body>
-</html>
+
+{% endblock %}
