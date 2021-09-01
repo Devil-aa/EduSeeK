@@ -20,7 +20,7 @@ class Post(models.Model):
     duration = models.CharField(max_length=255)
     stipend= models.CharField(max_length=255)
     skills = models.CharField(max_length=255)
-    last_date = models.CharField(max_length=255)
+    content = models.CharField(max_length=255)
     location = models.ForeignKey(Location, blank=False, on_delete=models.CASCADE, related_name="intern")
     
     def __str__(self):
