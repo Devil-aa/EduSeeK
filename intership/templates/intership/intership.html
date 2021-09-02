@@ -3,14 +3,32 @@
 {% block body %}
 {% load static %}
 
-    <h3>intership</h3>
+    <h1 style='text-align:center ; font-family:"Times New Roman", Times, serif;'>Intership</h1>
 
     {% for post in posts %}
-        {{post.title}}<br>
+    <div id="cont_blk">
+        <h4><strong>{{post.title}}</strong></h4><br>
         {{post.company}}<br>
-        <hr>
+    <table>
+        <table style=width:100%;>
+            <tr>
+              <th>Start Date</th>
+              <th>Duration</th>
+              <th>Stipend</th>
+              <th>Deadline</th>
+            </tr>
+            <tr>
+              <td>{{post.date}}</td>
+              <td>{{post.duration}}</td>
+              <td>{{post.stipend}}</td>
+              <td>{{post.deadline}}</td>
+            </tr>
+    </table>
+    <button><a href="">View Details</a></button>
+    </div>
     {% empty %}
         <h3>No listing</h3>
+    
     {% endfor %}
 
 {% endblock %}
